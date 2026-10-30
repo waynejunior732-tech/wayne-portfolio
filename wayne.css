@@ -1,8 +1,4 @@
 
-/* =================================
-   GENERAL STYLING
-================================= */
-
 * {
     margin: 0;
     padding: 0;
@@ -12,77 +8,79 @@
 }
 
 body {
-    background-color: #0b1426;
-    color: #ffffff;
+    background: #081b29;
+    color: white;
 }
 
-/* =================================
-   NAVIGATION BAR
-================================= */
-
+/* NAVIGATION */
 header {
-    background: #050b16;
-    padding: 20px 8%;
+    width: 100%;
+    background: #05131e;
     position: sticky;
     top: 0;
     z-index: 100;
-    border-bottom: 3px solid #f5bd35;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 20px 8%;
 }
 
 .logo {
-    color: #ffffff;
     font-size: 28px;
     font-weight: bold;
 }
 
 .logo span {
-    color: #f5bd35;
+    color: #00abf0;
 }
 
 .navbar ul {
     display: flex;
     list-style: none;
-}
-
-.navbar ul li {
-    margin-left: 30px;
+    gap: 25px;
 }
 
 .navbar ul li a {
-    color: #ffffff;
+    color: white;
     text-decoration: none;
     font-size: 16px;
     transition: 0.3s;
 }
 
 .navbar ul li a:hover {
-    color: #f5bd35;
+    color: #00abf0;
 }
 
-/* =================================
-   HOME SECTION
-================================= */
+/* BUTTONS */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #00abf0;
+    color: #081b29;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: 0.3s;
+    border: 2px solid #00abf0;
+}
 
+.btn:hover {
+    background: transparent;
+    color: #00abf0;
+}
+
+/* HOME */
 .home {
-    min-height: 90vh;
-    padding: 70px 8%;
+    min-height: 85vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 60px 8%;
     gap: 40px;
-
-    background: linear-gradient(
-        135deg,
-        #0b1426,
-        #18366b,
-        #101827
-    );
 }
 
 .home-content {
@@ -91,100 +89,53 @@ header {
 
 .home-content h3 {
     font-size: 24px;
-    color: #f5bd35;
-    margin-bottom: 10px;
+    color: #00abf0;
 }
 
 .home-content h1 {
     font-size: 48px;
-    margin: 10px 0;
-    color: #ffffff;
-    line-height: 1.2;
+    margin: 15px 0;
 }
 
 .home-content h1 span {
-    color: #f5bd35;
+    color: #00abf0;
 }
 
 .home-content h2 {
-    color: #4d8dff;
-    margin-bottom: 20px;
     font-size: 24px;
+    margin-bottom: 20px;
 }
 
 .home-content p {
-    font-size: 17px;
+    font-size: 16px;
     line-height: 1.8;
-    margin-bottom: 30px;
-    color: #d0d7e5;
+    color: #d1dce5;
 }
-
-/* =================================
-   BUTTON
-================================= */
-
-.btn {
-    display: inline-block;
-    padding: 14px 30px;
-    background: #f5bd35;
-    color: #101827;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.btn:hover {
-    background: #ffffff;
-    color: #101827;
-    transform: translateY(-4px);
-}
-
-/* =================================
-   PROFILE IMAGE
-================================= */
 
 .home-image img {
-    width: 330px;
-    height: 330px;
+    width: 300px;
+    height: 300px;
     object-fit: cover;
     border-radius: 50%;
-    border: 7px solid #f5bd35;
-
-    box-shadow: 0 0 30px rgba(245, 189, 53, 0.3);
+    border: 5px solid #00abf0;
 }
 
-/* =================================
-   GENERAL SECTIONS
-================================= */
-
+/* SECTION HEADINGS */
 section {
-    padding: 85px 8%;
+    padding: 80px 8%;
 }
 
 .heading {
     text-align: center;
-    font-size: 38px;
+    font-size: 35px;
     margin-bottom: 45px;
-    color: #ffffff;
 }
 
 .heading span {
-    color: #f5bd35;
+    color: #00abf0;
 }
 
-/* =================================
-   ABOUT SECTION
-================================= */
-
-.about {
-    background: linear-gradient(
-        135deg,
-        #172b50,
-        #243e68
-    );
-}
-
+/* ABOUT */
 .about-content {
     max-width: 850px;
     margin: auto;
@@ -192,205 +143,150 @@ section {
 }
 
 .about-content p {
-    font-size: 17px;
     line-height: 1.9;
-    color: #e0e6f0;
+    color: #d1dce5;
 }
 
 .education {
-    max-width: 700px;
-    margin: 40px auto 0;
+    margin-top: 40px;
     text-align: center;
-
-    background: #101827;
-    padding: 35px;
-    border-radius: 12px;
-
-    border-left: 5px solid #f5bd35;
-
-    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
 }
 
 .education h3 {
-    color: #f5bd35;
-    font-size: 26px;
+    color: #00abf0;
     margin-bottom: 20px;
+    font-size: 25px;
 }
 
 .education h4 {
     margin-top: 20px;
-    color: #ffffff;
-    font-size: 18px;
+    color: #00abf0;
 }
 
 .education p {
-    color: #c5ccda;
     margin-top: 8px;
 }
 
-/* =================================
-   SKILLS SECTION
-================================= */
-
+/* SKILLS */
 .skills {
-    background: blue;
+    background: #0b2538;
 }
 
 .skills-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 22px;
+    gap: 20px;
 }
 
 .skill-box {
-    background: #243b63;
-    padding: 30px 20px;
+    background: #102f46;
+    padding: 25px;
     text-align: center;
-
     border-radius: 12px;
-    border-bottom: 4px solid #f5bd35;
-
-    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
-
+    border: 1px solid #00abf0;
     transition: 0.3s;
 }
 
 .skill-box:hover {
-    transform: translateY(-10px);
-    background: #304e7c;
+    transform: translateY(-5px);
 }
 
 .skill-box h3 {
-    color: #f5bd35;
-    margin-bottom: 20px;
-    font-size: 20px;
+    color: #00abf0;
+    margin-bottom: 15px;
 }
 
 .skill-box p {
-    margin: 13px 0;
-    color: #ffffff;
-    font-size: 16px;
+    margin: 10px 0;
+    color: #d1dce5;
 }
 
-/* =================================
-   PROJECTS SECTION
-================================= */
-
-.projects {
-    background: linear-gradient(
-        135deg,
-        #142443,
-        #0b1426
-    );
-}
-
+/* PROJECTS */
 .projects-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 25px;
 }
 
 .project-box {
-    background: #243b63;
+    background: #102f46;
     padding: 30px;
-
     border-radius: 12px;
-    border-left: 5px solid #f5bd35;
-
-    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
-
+    border: 1px solid #00abf0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     transition: 0.3s;
 }
 
 .project-box:hover {
-    transform: translateY(-10px);
-    background: #304e7c;
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0, 171, 240, 0.2);
 }
 
 .project-box h3 {
-    color: #f5bd35;
+    color: #00abf0;
+    font-size: 22px;
     margin-bottom: 15px;
-    font-size: 21px;
 }
 
 .project-box p {
-    color: #e0e6f0;
-    line-height: 1.8;
-    font-size: 15px;
+    color: #d1dce5;
+    line-height: 1.7;
 }
 
-/* =================================
-   CONTACT SECTION
-================================= */
+/* MAKE PROJECT BUTTONS VISIBLE */
+.project-box .btn {
+    display: inline-block;
+    visibility: visible;
+    opacity: 1;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #00abf0;
+    color: #081b29;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    border: 2px solid #00abf0;
+    cursor: pointer;
+}
 
+.project-box .btn:hover {
+    background: transparent;
+    color: #00abf0;
+}
+
+/* CONTACT */
 .contact {
-    background: linear-gradient(
-        135deg,
-        #18366b,
-        #080f1e
-    );
-
-    color: #ffffff;
+    background: #0b2538;
     text-align: center;
-}
-
-.contact .heading {
-    color: #ffffff;
 }
 
 .contact-details {
-    margin: 30px 0;
-    line-height: 2.5;
+    margin: 25px 0;
 }
 
 .contact-details p {
-    color: #e0e6f0;
-    font-size: 17px;
+    margin: 12px 0;
+    color: #d1dce5;
 }
 
-/* =================================
-   FOOTER
-================================= */
-
+/* FOOTER */
 footer {
-    background: #050b16;
-    color: #ffffff;
+    background: #05131e;
     text-align: center;
     padding: 25px;
-
-    border-top: 3px solid #f5bd35;
+    color: #d1dce5;
 }
 
-footer p {
-    font-size: 14px;
-    color: #c5ccda;
-}
-
-/* =================================
-   RESPONSIVE DESIGN
-================================= */
-
+/* RESPONSIVE DESIGN */
 @media (max-width: 900px) {
-
-    .home {
-        flex-direction: column-reverse;
-        text-align: center;
-    }
-
     .skills-container {
         grid-template-columns: repeat(2, 1fr);
     }
-
-    .projects-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
 }
 
-/* MOBILE PHONE DESIGN */
-
-@media (max-width: 600px) {
-
+@media (max-width: 650px) {
     .navbar {
         flex-direction: column;
         gap: 20px;
@@ -402,21 +298,18 @@ footer p {
         gap: 15px;
     }
 
-    .navbar ul li {
-        margin: 0;
+    .home {
+        flex-direction: column-reverse;
+        text-align: center;
     }
 
     .home-content h1 {
         font-size: 36px;
     }
 
-    .home-content h2 {
-        font-size: 20px;
-    }
-
     .home-image img {
-        width: 230px;
-        height: 230px;
+        width: 220px;
+        height: 220px;
     }
 
     .skills-container,
@@ -425,11 +318,6 @@ footer p {
     }
 
     section {
-        padding: 65px 6%;
+        padding: 60px 6%;
     }
-
-    .heading {
-        font-size: 30px;
-    }
-
 }
